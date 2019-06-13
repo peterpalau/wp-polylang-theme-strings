@@ -23,7 +23,18 @@ if (!class_exists('MW_Polylang_Theme_Strings'))
 
         public function __construct()
         {
-            $this->Init();
+            if (static::Is_Plugin_Page())
+            {
+                $this->Init();
+            }
+        }
+
+        public static function Is_Plugin_Page()
+        {
+            if (is_admin() && preg_match("/\/admin.php?page=mlang_strings", $_SERVER['REQUEST_URI']))
+            {
+                return true;
+            }
         }
 
         public static function Install()
