@@ -1,5 +1,11 @@
 # Changelog
 
+## 3.5.0 (2019-06-13)
+
+* Improved the README.md
+* Created the CHANGELOG.md
+* Updated the Composer package details
+
 ## 3.4 (2017-05-17)
 
 * Fixed small bug in the search-engine of strings-translation.

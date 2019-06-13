@@ -1,5 +1,6 @@
 {
     "name": "peterpalau/wp-polylang-theme-strings",
+    "version": "3.5.0",
     "type": "wordpress-plugin",
     "description": "Polylang Theme Strings with support for Blade syntax",
     "license": "proprietary",
