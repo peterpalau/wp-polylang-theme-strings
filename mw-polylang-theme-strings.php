@@ -31,7 +31,7 @@ if (!class_exists('MW_Polylang_Theme_Strings'))
 
         public static function Is_Plugin_Page()
         {
-            if (is_admin() && preg_match("/\/admin.php?page=mlang_strings", $_SERVER['REQUEST_URI']))
+            if (is_admin() && preg_match("/\/admin.php?page=mlang_strings/", $_SERVER['REQUEST_URI']))
             {
                 return true;
             }
